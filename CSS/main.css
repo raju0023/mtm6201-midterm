@@ -1,0 +1,158 @@
+/* Reset browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    display: flex; /* Use a flexbox to arrange items in a row */
+    justify-content: space-between; /* Place content at the ends of the header */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding to the header */
+    background-color: cornflowerblue; /* Set the background color */
+}
+
+/* Main content styles */
+main {
+    padding: 20px; /* Add padding to the main content area */
+    color: white; /* Set text color to white */
+}
+
+/* Image container styles */
+.image-container {
+    position: relative; /* Position content relative to the container */
+    text-align: center; /* Center-align text within the container */
+}
+
+/* Image styles */
+.image {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100vh; /* Ensure the image scales with the viewport height */
+}
+
+/* Centered content styles */
+.centered-content {
+    position: absolute; /* Position the content absolutely within the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content both vertically and horizontally */
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add padding to the centered content */
+    border-radius: 10px; /* Add rounded corners to the content */
+}
+
+/* Heading and paragraph styles */
+h1, p {
+    margin: 0; /* Remove margin for h1 and p elements */
+    padding: 0; /* Remove padding for h1 and p elements */
+    color: white; /* Set text color to white */
+}
+
+/* Heading 2 styles */
+h2 {
+    font-size: 3em; /* Set font size for h2 elements */
+    color: white; /* Set text color to white */
+}
+
+/* Button styles */
+button {
+    background-color: cornflowerblue; /* Set the button background color */
+    border: none; /* Remove button borders */
+    color: white; /* Set button text color to white */
+    cursor: pointer; /* Use a pointer cursor on hover */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: center; /* Center-align text within the button */
+    text-decoration: none; /* Remove underlines from links */
+    display: inline-block; /* Make the button an inline block element */
+    font-size: 16px; /* Set font size for the button */
+    margin: 4px 2px; /* Add margin around the button */
+    transition-duration: 0.4s; /* Apply a smooth transition on hover */
+}
+
+/* Button hover styles */
+button:hover {
+    background-color: darkblue; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: cornflowerblue; /* Set the footer background color */
+    padding: 10px; /* Add padding to the footer */
+    text-align: left; /* Align text to the left in the footer */
+    color: white; /* Set text color to white */
+}
+
+/* Logo styles */
+.logo {
+    height: 70px; /* Set the height of the logo */
+}
+
+/* Navigation list styles */
+nav ul {
+    display: flex; /* Use flexbox for the navigation menu */
+    justify-content: flex-end; /* Align items to the right within the menu */
+    flex-direction: row; /* Arrange menu items in a row */
+}
+
+/* Navigation styles */
+nav {
+    position: relative; /* Position the navigation relatively */
+    transition: transform .2s; /* Apply a smooth transform effect on hover */
+}
+
+/* Navigation hover styles */
+nav :hover {
+    transform: scale(1.2); /* Enlarge the navigation on hover */
+}
+
+/* Navigation list item styles */
+nav li {
+    padding: 5px; /* Add padding to navigation list items */
+    list-style: none; /* Remove list item bullets */
+}
+
+/* Navigation link styles */
+nav a {
+    text-decoration: none; /* Remove underlines from navigation links */
+    color: white; /* Set link text color to white */
+}
+
+/* Navigation input styles */
+nav input {
+    width: 100%; /* Set the width of input elements to 100% */
+    margin: 0 auto; /* Center-align input elements */
+}
+
+/* Navigation form styles */
+nav form {
+    padding-left: 20px; /* Add padding to the left of the navigation form */
+}
+
+/* Navigation link hover styles */
+nav ul li a:hover {
+    background-color: rgba(0.5, 0.5, 0.5, 0.5); /* Change background color on link hover */
+}
+
+/* Media query for responsiveness (max-width: 768px) */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around; /* Space links around evenly */
+    }
+
+    .nav-menu ul {
+        margin-top: 20px; /* Add top margin to the navigation menu on smaller screens */
+    }
+
+    .nav-menu ul li a {
+        text-align: center; /* Center-align navigation links */
+        width: 100%; /* Set link width to 100% for smaller screens */
+    }
+}
